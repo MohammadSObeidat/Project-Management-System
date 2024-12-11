@@ -1,0 +1,69 @@
+.navbar-container .navbar-content {
+    background-color: #FFFFFF;
+    height: 55px;
+    box-shadow: 0 1px 4px 0 #00000026;
+}
+.navbar-container .navbar-content.dark {
+    background-color: #000;
+    color: #FFFFFF;
+    box-shadow: 0 1px 4px 0 #fff;
+}
+.navbar-container .navbar-content.light {
+    background-color: #FFFFFF;
+    color: #000;
+}
+.navbar-container .navbar-content .user-info img {
+    min-width: 40px;
+    max-width: 40px;
+    min-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+}
+.navbar-container .navbar-content .user-info .drop-down {
+    position: absolute;
+    top: 56px;
+    right: 50px;
+    background-color: #FFFFFF;
+    width: 350px;
+    border: 2px solid #FFFFFF;
+    opacity: 0;
+    visibility: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: opacity 0.3s ease, visibility 0.3s ease, clip-path 0.3s ease;
+}
+.navbar-container .navbar-content .user-info .drop-down.active {
+    opacity: 1;
+    visibility: visible;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.navbar-container .navbar-content .user-info .drop-down ul {
+    padding: 0;
+    margin: 0;
+}
+.navbar-container .navbar-content .user-info .drop-down ul li {
+    list-style: none;
+}
+.navbar-container .navbar-content .user-info .drop-down ul li button {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar-container .navbar-content .user-info .drop-down ul li button i {
+    font-size: 20px;
+}
+.navbar-container .navbar-content .user-info .drop-down ul li button:hover {
+    background-color: #ef9b29;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .navbar-container .navbar-content .user-info .email {
+        display: none !important;
+    }
+}

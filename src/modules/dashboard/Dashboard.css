@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+CU:wght@100..400&family=Playwrite+PE:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.header-container {
+    background-image: url(../../assets/images/home-bg.png);
+    height: 310px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+.header-container .header-content {
+    padding: 110px 0px 110px 40px;
+}
+.header-container .header-content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400px;
+    font-size: 36px;
+    line-height: 43.88px;
+    color: #FFFFFF;
+}
+.header-container .header-content h1 span {
+    color: #EF9B28;
+}
+.header-container .header-content p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400px;
+    font-size: 30px;
+    line-height: 36.57px;
+    color: #FFFFFF;
+}
+.dashboard-content {
+    margin-top: 20px;
+    display: flex;
+}
+.dashboard-content .content {
+    width: 50%;
+}
+.dashboard-content .content .title {
+    border-left: 3px solid #EF9B28;
+    padding-left: 15px;
+}
+.dashboard-content .content .title h4{
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+}
+.dashboard-content .content .title p {
+    font-size: 13px;
+    margin: 0;
+    color: #6F7881;
+}
+.dashboard-content .content .boxs {
+    margin-top: 25px;
+    display: flex;
+    gap: 40px;
+}
+.dashboard-content .content .boxs .box-Progress {
+    background-color: #E5E6F4;
+    width: 147px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.dashboard-content .content .boxs .box-Progress .box-img {
+    width: 40px;
+    height: 40px;
+    background-color: #CFD1EC;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard-content .content .boxs .box-Progress p {
+    font-size: 13px;
+    color: #6F7881;
+    margin: 0;
+}
+.dashboard-content .content .boxs .box-Progress h3 {
+    font-size: 20px;
+}
+.dashboard-content .content .boxs .box-Progress.dark h3 {
+    color: #6F7881;
+}
+.dashboard-content .content .boxs .box-Tasks {
+    background-color: #F4F4E5;
+    width: 147px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.dashboard-content .content .boxs .box-Tasks .box-img {
+    width: 40px;
+    height: 40px;
+    background-color: #E4E4BC;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard-content .content .boxs .box-Tasks p {
+    font-size: 13px;
+    color: #6F7881;
+    margin: 0;
+}
+.dashboard-content .content .boxs .box-Tasks h3 {
+    font-size: 20px;
+}
+.dashboard-content .content .boxs .box-Tasks.dark h3 {
+    color: #6F7881;
+}
+.dashboard-content .content .boxs .box-Projects {
+    background-color: #F4E5ED;
+    width: 147px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.dashboard-content .content .boxs .box-Projects .box-img {
+    width: 40px;
+    height: 40px;
+    background-color: #E7C3D7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard-content .content .boxs .box-Projects p {
+    font-size: 13px;
+    color: #6F7881;
+    margin: 0;
+}
+.dashboard-content .content .boxs .box-Projects h3 {
+    font-size: 20px;
+}
+.dashboard-content .content .boxs .box-Projects.dark h3 {
+    color: #6F7881;
+}
+
+@media (max-width: 768px) {
+    .header-container .header-content {
+        padding: 50px;
+    }
+    .dashboard-content .content .boxs {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .dashboard-content .content .boxs {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
