@@ -51,7 +51,7 @@ export default function UserList() {
 
   const theme = createTheme({
     palette: {
-      mode: isDarkMode ? 'dark' : 'light', // Enable dark mode
+      mode: isDarkMode ? 'dark' : 'light', 
     },
   });
 
